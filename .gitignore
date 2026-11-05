@@ -1,0 +1,59 @@
+# =========================
+# C++ Build Artifacts
+# =========================
+# Исполняемые файлы
+*.exe
+*.exe
+*.out
+*.app
+
+# Объектные файлы и библиотеки
+*.o
+*.obj
+*.so
+*.dll
+*.lib
+*.a
+*.pdb
+*.ilk
+*.idb
+
+# Папки со сборкой (если будешь использовать CMake)
+build/
+bin/
+obj/
+out/
+Debug/
+Release/
+
+# =========================
+# IDE and Editor files
+# =========================
+# VS Code (папка с локальными настройками)
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+
+# CLion / JetBrains
+.idea/
+
+# =========================
+# OS generated files
+# =========================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
