@@ -1,16 +1,16 @@
 <div align="center">
 
-# 🧭 dijkstra_dynamic_graph
+# 🧭 dijkstra-dynamic-graph
 
 **Кратчайшие пути в графе двумя способами: динамическое программирование и алгоритм Дейкстры.**
 Единый интерфейс, взаимозаменяемые алгоритмы, чистая архитектура на современном C++.
 
-![C++](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=c%2B%2B&logoColor=white)
-![Platform](https://img.shields.io/badge/platform-Windows-0078D6?logo=windows&logoColor=white)
-[![CI](https://github.com/meloy156/dijkstra_dynamic_graph/actions/workflows/ci.yml/badge.svg)](https://github.com/meloy156/dijkstra_dynamic_graph/actions/workflows/ci.yml)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-learning%20project-blue)
-
+![C++](https://img.shields.io/badge/C%2B%2B-20-00599C?style=flat-square&logo=c%2B%2B&logoColor=white&labelColor=1f2937)
+![Platform](https://img.shields.io/badge/platform-Windows-06b6d4?style=flat-square&logo=windows&logoColor=white&labelColor=1f2937)
+[![CI](https://img.shields.io/github/actions/workflow/status/meloy156/dijkstra-dynamic-graph/ci.yml?style=flat-square&label=CI&labelColor=1f2937)](https://github.com/meloy156/dijkstra-dynamic-graph/actions/workflows/ci.yml)
+![License](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square&labelColor=1f2937)
+![Status](https://img.shields.io/badge/status-learning%20project-f59e0b?style=flat-square&labelColor=1f2937)
+ 
 </div>
 
 ---
@@ -186,10 +186,10 @@ git clone https://github.com/meloy156/dijkstra_dynamic_graph.git
 cd dijkstra_dynamic_graph
 
 # Динамическое программирование
-g++ -std=c++20 -O2 Graph/Graph.cpp Algorithms/DP_finder.cpp Apps/main_for_dynamic.cpp -o dp_app
+g++ -std=c++20 -O2 Graph/Graph.cpp Algorithms/DP_finder.cpp main/main_for_dynamic.cpp -o dp_app
 
 # Алгоритм Дейкстры
-g++ -std=c++20 -O2 Graph/Graph.cpp Algorithms/Dijkstra_finder.cpp Apps/main_for_dijkstra.cpp -o dijkstra_app
+g++ -std=c++20 -O2 Graph/Graph.cpp Algorithms/Dijkstra_finder.cpp main/main_for_dijkstra.cpp -o dijkstra_app
 ```
 
 Запуск: `./dp_app` или `./dijkstra_app` (в Windows `dp_app.exe`).
@@ -248,8 +248,8 @@ int main() {
 
 | Проверка | Статус | Что проверяет |
 |---|---|---|
-| Сборка (CI) | [![CI](https://github.com/meloy156/dijkstra_dynamic_graph/actions/workflows/ci.yml/badge.svg)](https://github.com/meloy156/dijkstra_dynamic_graph/actions/workflows/ci.yml) | Компиляция обоих приложений без ошибок и предупреждений |
-| Тесты алгоритмов | [![Tests](https://github.com/meloy156/dijkstra_dynamic_graph/actions/workflows/ci.yml/badge.svg)](https://github.com/meloy156/dijkstra_dynamic_graph/actions/workflows/ci.yml) | Известные расстояния на графах из задания, недостижимые вершины, совпадение ДП и Дейкстры |
+| Сборка (CI) | [![CI](https://github.com/meloy156/dijkstra-dynamic-graph/actions/workflows/ci.yml/badge.svg)](https://github.com/meloy156/dijkstra-dynamic-graph/actions/workflows/ci.yml) | Компиляция обоих приложений без ошибок и предупреждений |
+| Тесты алгоритмов | [![Tests](https://github.com/meloy156/dijkstra-dynamic-graph/actions/workflows/ci.yml/badge.svg)](https://github.com/meloy156/dijkstra-dynamic-graph/actions/workflows/ci.yml) | Известные расстояния на графах из задания, недостижимые вершины, совпадение ДП и Дейкстры |
 
 Нажми на значок, чтобы открыть последний запуск в GitHub Actions.
 
