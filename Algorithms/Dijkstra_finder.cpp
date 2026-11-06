@@ -1,5 +1,6 @@
 #include "Dijkstra_finder.h"
 
+#include <climits>
 
 long long Dijkstra_finder::find_min_dist(const Graph& grap, int id_vertex_start, int id_vertex_end) const
 {
