@@ -38,7 +38,7 @@ public:
 
 
 
-class Graph_for_dynamic
+class Graph
 {
 private:
     int count_vertex;
@@ -48,14 +48,14 @@ private:
 public:
 
 
-    Graph_for_dynamic()
+    Graph()
         : count_vertex(0)
         , count_edge(0)
         , vertices()
     {}
 
 
-    Graph_for_dynamic(int count_vertex)
+    Graph(int count_vertex)
         : count_vertex(count_vertex)
         , count_edge(0)
         , vertices(count_vertex + 1)
@@ -68,6 +68,4 @@ public:
     int get_count_edge() const;
 
     void print_vertex(std::ostream& os) const;
-
-    long long dist(int id_vertex_to, int id_vertex_end) const;
 };
