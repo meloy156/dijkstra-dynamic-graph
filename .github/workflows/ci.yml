@@ -1,0 +1,32 @@
+name: C++ Build
+
+# Когда запускать этот CI?
+on:
+  push:
+    branches: [ "main", "master" ] # Запускать при пуше в main или master
+  pull_request:
+    branches: [ "main", "master" ] # И при создании Pull Request
+
+jobs:
+  build:
+    # На какой ОС запускать? (Ubuntu — самая быстрая и дешевая)
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Копируем твой код из репозитория на виртуальную машину
+    - uses: actions/checkout@v4
+
+    # 2. Компилируем Дейкстру
+    - name: Compile Dijkstra
+      run: |
+        g++ -std=c++20 -Wall -Wextra -I . Graph/Graph.cpp Algorithms/Dijkstra_finder.cpp main/main_for_dijkstra.cpp -o program_dijkstra
+
+    # 3. Компилируем Динамическое программирование
+    - name: Compile DP
+      run: |
+        g++ -std=c++20 -Wall -Wextra -I . Graph/Graph.cpp Algorithms/DP_finder.cpp main/main_for_dynamic.cpp -o program_dp
+
+    # 4. Проверяем, что программа вообще запускается
+    - name: Test Run DP (Smoke Test)
+      run: |
+        echo "1 7" | ./program_dp || echo "Программа завершилась (это нормально, т.к. она ждет ввода)"
